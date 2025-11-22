@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+</head>
+<body>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter your username"><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <p>Favorite Color:</p>
+            <input type="radio" id="red" name="fav_color" value="red">
+            <label for="red">Red</label><br>
+            <input type="radio" id="blue" name="fav_color" value="blue">
+            <label for="blue">Blue</label><br>
+            <input type="radio" id="green" name="fav_color" value="green">
+            <label for="green">Green</label><br><br>
+
+            <p>Interests:</p>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding">Coding</label><br>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label><br><br>
+
+            <label for="country">Country:</label><br>
+            <select id="country" name="country">
+                <option value="">--Please choose an option--</option>
+                <option value="ind">India</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+            </select><br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Any additional comments..."></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Inputs</legend>
+
+            <label for="quantity">Quantity (1-10):</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1"><br><br>
+
+            <label for="volume">Volume:</label><br>
+            <input type="range" id="volume" name="volume" min="0" max="100" value="50"><br><br>
+
+            <label for="homepage">Homepage:</label><br>
+            <input type="url" id="homepage" name="homepage" placeholder="https://example.com"><br><br>
+
+            <label for="search">Search:</label><br>
+            <input type="search" id="search" name="search" placeholder="Search here..."><br><br>
+
+            <label for="fav_color_picker">Choose your favorite color:</label><br>
+            <input type="color" id="fav_color_picker" name="fav_color_picker" value="#ff0000"><br><br>
+
+            <label for="file_upload">Upload File:</label><br>
+            <input type="file" id="file_upload" name="file_upload"><br><br>
+        </fieldset>
+
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+</body>
+</html>
